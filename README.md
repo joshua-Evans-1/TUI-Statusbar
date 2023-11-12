@@ -2,18 +2,26 @@
 
 ## install 
 
-```cargo install cargo-generate```
+```sh
+cargo install cargo-generate
+```
 
-```cargo generate --git https://github.com/joshua-Evans-1/TUI-Statusbar```
+```
+cargo generate --git https://github.com/joshua-Evans-1/TUI-Statusbar
+```
 
 
 ## bspwm.rc 
 
 most important lines are
 
-```bspc rule -a kitty:statusbar sticky=on state=floating rectangle=3790x70+20+20```
+```
+bspc rule -a kitty:statusbar sticky=on state=floating rectangle=3790x70+20+20
+```
 
-```kitty --name statusbar sh -c 'cd <DIR_TO_PROJECT> && cargo run'```
+```
+kitty --name statusbar sh -c 'cd <DIR_TO_PROJECT> && cargo run'
+```
 
 
 ```
