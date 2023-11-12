@@ -22,8 +22,7 @@ bspc rule -a kitty:statusbar sticky=on state=floating rectangle=3790x70+20+20
 ```
 kitty --name statusbar sh -c 'cd <DIR_TO_PROJECT> && cargo run'
 ```
-
-
+---
 ```
 #! /bin/sh
 
