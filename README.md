@@ -1,5 +1,10 @@
 # tui statusbar
 
+## install 
+
+```cargo install cargo-generate```
+
+```cargo generate --git https://github.com/joshua-Evans-1/TUI-Statusbar```
 
 
 ## bspwm.rc 
