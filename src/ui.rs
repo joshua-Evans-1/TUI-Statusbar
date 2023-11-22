@@ -42,14 +42,12 @@ pub fn render(app: &mut App, frame: &mut Frame) {
         layout[0],
     );
 
-
     frame.render_widget(
         Paragraph::new( format!( " 2 " ) )
         .block( Block::new().borders( Borders::ALL ) )
         .alignment(Alignment::Center),
         layout[1],
     );
-
 
     frame.render_widget(
         Paragraph::new( format!( " 3 " ) )
@@ -58,14 +56,12 @@ pub fn render(app: &mut App, frame: &mut Frame) {
         layout[2],
     );
 
-
     frame.render_widget(
         Paragraph::new( format!( " 4 " ) )
         .block( Block::new().borders( Borders::ALL ) )
         .alignment(Alignment::Center),
         layout[3],
     );
-
 
     frame.render_widget(
         Paragraph::new( format!( " 5 " ) )
@@ -74,14 +70,12 @@ pub fn render(app: &mut App, frame: &mut Frame) {
         layout[4],
     );
 
-
     frame.render_widget(
         Paragraph::new( format!( " 6 " ) )
         .block( Block::new().borders( Borders::ALL ) )
         .alignment(Alignment::Center),
         layout[5],
     );
-
 
     frame.render_widget(
         Paragraph::new( format!( " 7 " ) )
@@ -90,14 +84,12 @@ pub fn render(app: &mut App, frame: &mut Frame) {
         layout[6],
     );
 
-
     frame.render_widget(
         Paragraph::new( format!( " 8 " ) )
         .block( Block::new().borders( Borders::ALL ) )
         .alignment(Alignment::Center),
         layout[7],
     );
-
 
     frame.render_widget(
         Paragraph::new( format!( " 9 " ) )
@@ -106,25 +98,27 @@ pub fn render(app: &mut App, frame: &mut Frame) {
         layout[8],
     );
 
-
     frame.render_widget(
         Paragraph::new( format!( " 10 " ) )
         .block( Block::new().borders( Borders::ALL ) )
         .alignment(Alignment::Center),
         layout[9],
     );
+
     frame.render_widget(
         Paragraph::new( format!( " vol- " ) )
         .block( Block::new().borders( Borders::ALL ) )
         .alignment(Alignment::Center),
         layout[11],
     );   
+
     frame.render_widget(
         Paragraph::new( format!( " vol+ " ) )
         .block( Block::new().borders( Borders::ALL ) )
         .alignment(Alignment::Center),
         layout[12],
     );
+    
     frame.render_widget(
         Paragraph::new( format!( "{}", app.time ) )
         .block( Block::new().borders( Borders::ALL ) )
