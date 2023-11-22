@@ -16,7 +16,7 @@ pub struct App {
 impl Default for App {
     fn default() -> Self {
         Self {
-            time: chrono::offset::Local::now().format("%H:%M:%S").to_string(),//chrono::offset::Local::now().format("%H:%M:%S"),
+            time: chrono::offset::Local::now().format("%H:%M:%S").to_string(),
             running: true,
         }
     }
@@ -31,6 +31,10 @@ impl App {
     /// Handles the tick event of the terminal.
     pub fn tick(&mut self) {
         self.time = chrono::offset::Local::now().format("%H:%M:%S").to_string();
+    }
+
+    pub fn new_desktop() {
+        
     }
 
     /// Set running to false to quit the application.
